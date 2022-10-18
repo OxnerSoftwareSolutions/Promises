@@ -24,6 +24,7 @@ function fullSession(question) {
 		.then(() => getFortune(question))
 		.then((fortuneMessage) => {
 			output = output.concat(fortuneMessage);
+			return output;
 		})
 
 		.then(() => goodbye())
